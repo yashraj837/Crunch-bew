@@ -23,10 +23,10 @@ logger = logging.getLogger(__name__)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # ==================== CONFIG ====================
-BOT_TOKEN = "8756139201:AAE1piMOVIduUU4dUJx0vyZsOl6Jm9dh-Ik"
-OWNER_ID = 8189708860
-CHANNEL_LINK = "https://t.me/+2YhAjjTUB8g3YTFk"
-CHANNEL_ID = -1003808606039
+BOT_TOKEN = "8705193260:AAEbZUyHYeE8BiTit1FWabC4ePC4BuW3wKc"
+OWNER_ID = 8731647972
+CHANNEL_LINK = "https://t.me/subaru_asthetic"
+CHANNEL_ID = -1004295028653
 MAX_RETRIES = 3
 MAX_RETRIES_ADMIN = 8
 POST_AUTH_RETRIES = 3
