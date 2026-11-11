@@ -642,7 +642,7 @@ class CrunchyrollChecker:
     def get_token(self):
         url="https://beta-api.crunchyroll.com/auth/v1/token"
         headers={"host":"beta-api.crunchyroll.com","Accept":"application/json","Accept-Charset":"UTF-8","Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","ETP-Anonymous-ID":self.etp_id,"Request-Type":"SignIn","User-Agent":"Crunchyroll/ANDROIDTV/3.65.0_22347 (Android 10; en-US; sdk_google_atv_x86)"}
-        data=f"grant_type=password&username={requests.utils.quote(self.username)}&password={requests.utils.quote(self.password)}&scope=offline_access&client_id=rjs0ltx0dbwkliwxdzdf&client_secret=4V7rf21-UFXeZ-5XAd0X_QPwr1gu_i1s&device_type=ADITYA&device_id={self.device_id}&device_name=ADITYA_1SIPTEA"
+        data=f"grant_type=password&username={requests.utils.quote(self.username)}&password={requests.utils.quote(self.password)}&scope=offline_access&client_id=szrlf8xrlwge22mym1zg&client_secret=G0IDpzhSwICbTYDiS2dGMwicTw8eUMI0&device_type=NYRO&device_id={self.device_id}&device_name=NYRO_1SIPTEA"
         resp,err=self._safe("POST",url,headers,data)
         if err: return False,err if is_proxy_error(err) else f"Request failed: {err}"
         if 'access_token":"ey' in resp.text:
